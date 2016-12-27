@@ -12,10 +12,11 @@ html,body{
 
 .typr_text{
 	border:0;
-	width:100%;
+	width:60%;
+	font-size: 1.5em;
+	display: block;
+	margin: 0 auto;
 	height: 100%;
-	top:0;
-	left:0;
 	padding:5px 5px 50px 5px;
 }
 
@@ -26,6 +27,7 @@ html,body{
 	position: fixed;
 	height: 40px;
 	width: 100%;
+	padding: 0 5%;
 	background-color:#333;
 	bottom: 0;
 	left:0;
@@ -36,4 +38,46 @@ html,body{
 	display: table-row;
 	width:0;
 	height:0;
+}
+
+.typr_volume{
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 40px;
+	background-color: transparent;
+}
+
+.typr_volume span{
+	position: absolute;
+}
+
+.typr_volume .typr_volume_speaker{
+	top: 8px;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	color: #a2a2a2;
+	background: transparent;
+}
+
+.typr_volume .typr_volume_level_scale{
+	width: 70px;
+	height: 2px;
+	background: #888;
+	display: block;
+	top: 19px;
+	left: 24px;
+}
+
+.typr_volume .typr_volume_level_handle{
+	width: 10px;
+	height: 10px;
+	background: #e91e63;
+	top: 15px;
+	left: 0px;
+	transition: all 0.2s ease;
+	border-radius: 50%;
+	display: block;
+	cursor: move;
 }
